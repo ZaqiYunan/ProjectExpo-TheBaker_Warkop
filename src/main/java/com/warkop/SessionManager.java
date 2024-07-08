@@ -54,7 +54,7 @@ public class SessionManager {
         createStage(loads);
     }
     public void showChatBox(){
-        FXMLLoader loads = new FXMLLoader(getClass().getResource("/FXML/ChatBoxPage.fxml"));
+        FXMLLoader loads = new FXMLLoader(getClass().getResource("/FXML/ChatboxPage.fxml"));
         createStage(loads);
     }
     public void showMain() throws IOException{
@@ -87,6 +87,10 @@ public class SessionManager {
     }
     public void getMateriView(){
         FXMLLoader loads = new FXMLLoader(getClass().getResource("/FXML/Materi.fxml"));
+        createStage(loads);
+    }
+    public void showSertifikat(){
+        FXMLLoader loads = new FXMLLoader(getClass().getResource("/FXML/Sertifikat.fxml"));
         createStage(loads);
     }
     

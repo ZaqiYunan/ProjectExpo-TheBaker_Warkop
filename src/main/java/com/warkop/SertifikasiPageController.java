@@ -16,6 +16,10 @@ import javafx.scene.control.ScrollPane;
 
 public class SertifikasiPageController {
     @FXML
+    private Button tombolLihatSertifikat;
+    @FXML
+    private Button tombolUnduh;
+    @FXML
     private Button tombolMateriPelatihan;
 
     @FXML
@@ -39,9 +43,16 @@ public class SertifikasiPageController {
     private Label labelHome;
     @FXML
     private Label labelNamaAkun;
-    
 
     public void initialize() {
+        tombolUnduh.addEventHandler(MouseEvent.MOUSE_ENTERED,
+                event -> tombolUnduh.setStyle("-fx-background-color: #12c96a"));
+        tombolUnduh.addEventHandler(MouseEvent.MOUSE_EXITED,
+                event -> tombolUnduh.setStyle("-fx-background-color:  #0df882"));
+        tombolLihatSertifikat.addEventHandler(MouseEvent.MOUSE_ENTERED,
+                event -> tombolLihatSertifikat.setStyle("-fx-background-color: #12c96a"));
+        tombolLihatSertifikat.addEventHandler(MouseEvent.MOUSE_EXITED,
+                event -> tombolLihatSertifikat.setStyle("-fx-background-color:  #0df882"));
         labelNamaAkun.setText(AccountModel.getInstance().getAccount().getNamaLengkap());
         tombolChatBox.addEventHandler(MouseEvent.MOUSE_ENTERED, event -> labelChatBox.setStyle("-fx-underline: true"));
         tombolChatBox.addEventHandler(MouseEvent.MOUSE_EXITED, event -> labelChatBox.setStyle("-fx-underline: false"));
@@ -68,6 +79,8 @@ public class SertifikasiPageController {
     }
 
     public void handleKeluarAction() throws IOException {
+        AccountModel.getInstance().getSessionManager()
+                .removeStage(Stage.class.cast(tombolKeluar.getScene().getWindow()));
         AccountModel.getInstance().getAccount().removeUserAccount();
         AccountModel.getInstance().getSessionManager().showLogin();
     }
@@ -81,7 +94,16 @@ public class SertifikasiPageController {
     }
 
     public void handleMateriPelatihanAction() {
-        AccountModel.getInstance().getSessionManager().removeStage(Stage.class.cast(tombolMateriPelatihan.getScene().getWindow()));
+        AccountModel.getInstance().getSessionManager()
+                .removeStage(Stage.class.cast(tombolMateriPelatihan.getScene().getWindow()));
         AccountModel.getInstance().getSessionManager().getMateriPelatihanView();
+    }
+
+    public void handleLihatSertifikat() {
+        AccountModel.getInstance().getSessionManager().showSertifikat();
+    }
+
+    public void handleUnduh() {
+        AccountModel.getInstance().getSessionManager().showSertifikat();
     }
 }

@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane fx:id="berandaPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1068.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.warkop.BerandaPageController">
    <children>
@@ -126,10 +127,33 @@
                   <Rectangle fx:id="ktkMulaiDariSini" arcHeight="5.0" arcWidth="5.0" fill="#0df882" height="99.0" layoutX="272.0" layoutY="522.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="80.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-arc-height: 10; -fx-arc-width: 15;" width="342.0" />
                   <ScrollPane layoutX="1306.0" layoutY="739.0" prefHeight="167.0" prefWidth="517.0">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="514.0">
                            <effect>
                               <DropShadow offsetX="10.0" offsetY="10.0" />
                            </effect>
+                           <children>
+                              <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMAGES/—Pngtree—pdf%20file%20icon%20png_7965915.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="14.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fundamen Bisnis" wrappingWidth="105.96875" x="8.0">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="154.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMAGES/—Pngtree—pdf%20file%20icon%20png_7965915.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="165.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digitalisasi Pasar" wrappingWidth="105.96875">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="tombolMateri" mnemonicParsing="false" onAction="#handleMateri" opacity="0.0" prefHeight="153.0" prefWidth="504.0" text="DigitalisasiPasar" />
+                           </children>
                         </AnchorPane>
                     </content>
                   </ScrollPane>
@@ -294,7 +318,11 @@
                         <Font name="Century Gothic Bold" size="28.0" />
                      </font>
                   </Button>
-                  <Button fx:id="tombolMulaiDariSini" layoutX="273.0" layoutY="523.0" mnemonicParsing="false" onAction="#handleMulaiDariSiniAction" opacity="0.0" prefHeight="96.0" prefWidth="341.0" text="tombolMulaiDariSini" />
+                  <Button fx:id="tombolMulaiDariSini" layoutX="273.0" layoutY="523.0" mnemonicParsing="false" onAction="#handleMulaiDariSiniAction" prefHeight="96.0" prefWidth="341.0" style="-fx-background-color: #0df882;" text="Mulai Dari Sini">
+                     <font>
+                        <Font name="Century Gothic Bold" size="28.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
         </content>

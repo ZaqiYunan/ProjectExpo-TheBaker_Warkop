@@ -1,7 +1,6 @@
 package com.warkop;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -77,11 +76,15 @@ public class BerandaPageController implements Initializable {
     private Button tombolBeliPaket;
     @FXML
     private Shape rectangleMateriDasar;
+    @FXML
+    private Button tombolMateri;
 
     private static final String DATA_USER_FILE_PATH = "src/main/resources/DATABASE/DataUser.json";
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        tombolMulaiDariSini.addEventHandler(MouseEvent.MOUSE_ENTERED, event -> tombolMulaiDariSini.setStyle("-fx-background-color: #12c96a"));
+        tombolMulaiDariSini.addEventHandler(MouseEvent.MOUSE_EXITED, event -> tombolMulaiDariSini.setStyle("-fx-background-color: #0df882"));
         labelNamaAkun.setText(AccountModel.getInstance().getAccount().getCurrentUser().getNamaLengkap());
         tombolMulaiDariSini.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> handleMulaiDariSiniAction());
         tombolMateriDasar.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> handleBeliMateriDasar());
@@ -254,6 +257,9 @@ public class BerandaPageController implements Initializable {
         alert.setHeaderText(header);
         alert.setContentText(content);
         alert.showAndWait();
+    }
+     public void handleMateri(){
+        AccountModel.getInstance().getSessionManager().getMateriView();
     }
 
 }

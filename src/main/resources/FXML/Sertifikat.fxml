@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="1520.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.warkop.Sertifikat">
+   <children>
+      <Group layoutX="1088.0" layoutY="33.0" />
+      <Label alignment="TOP_CENTER" blendMode="SRC_ATOP" ellipsisString="" layoutX="1382.0" layoutY="52.0" text="Tidak punya akun?" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Century" size="22.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#5580ad" height="816.0" layoutX="-12.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="1532.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#3ce8a6" height="730.0" layoutX="32.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="1456.0" />
+      <Text layoutX="92.0" layoutY="159.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Sertifikasi Lulus Materi Dasar" wrappingWidth="1319.695269184976">
+         <font>
+            <Font name="EngraversGothic BT" size="96.0" />
+         </font>
+      </Text>
+      <Line endX="192.0" layoutX="310.0" layoutY="643.0" startX="-134.0" strokeWidth="3.0" />
+      <Line endX="192.0" layoutX="1155.0" layoutY="642.0" startX="-134.0" strokeWidth="3.0" />
+      <Text layoutX="-78.0" layoutY="695.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="09/07/2024" textAlignment="CENTER" wrappingWidth="824.0000003576279">
+         <font>
+            <Font name="EngraversGothic BT" size="53.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="266.0" fitWidth="548.0" layoutX="917.0" layoutY="564.0">
+         <image>
+            <Image url="@../IMAGES/signature.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textNama" layoutX="88.0" layoutY="410.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama" textAlignment="CENTER" wrappingWidth="1319.695269184976">
+         <font>
+            <Font name="EngraversGothic BT" size="82.0" />
+         </font>
+      </Text>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

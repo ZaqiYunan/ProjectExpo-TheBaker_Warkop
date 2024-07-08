@@ -99,12 +99,12 @@
                         <Font name="Century Gothic Bold" size="29.0" />
                      </font>
                   </Label>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0aff34" height="52.0" layoutX="1052.0" layoutY="569.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="80.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-arc-height: 10; -fx-arc-width: 15;" width="200.0">
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0aff34" height="60.0" layoutX="1048.0" layoutY="565.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="80.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-arc-height: 10; -fx-arc-width: 15;" width="236.0">
                      <effect>
                         <DropShadow color="#575757" height="13.35" offsetX="8.0" offsetY="8.0" radius="2.8375" width="0.0" />
                      </effect>
                   </Rectangle>
-                  <Label alignment="TOP_CENTER" blendMode="SRC_ATOP" ellipsisString="" layoutX="1032.0" layoutY="578.0" prefHeight="37.0" prefWidth="241.0" text="Lihat Sertifikat" textOverrun="WORD_ELLIPSIS">
+                  <Label alignment="TOP_CENTER" blendMode="SRC_ATOP" ellipsisString="" layoutX="1032.0" layoutY="578.0" prefHeight="37.0" prefWidth="261.0" text="Lihat Sertifikat" textOverrun="WORD_ELLIPSIS">
                      <font>
                         <Font name="Century Gothic Bold" size="26.0" />
                      </font>
@@ -114,7 +114,7 @@
                         <Font name="Century Gothic Bold" size="29.0" />
                      </font>
                   </Label>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0aff34" height="52.0" layoutX="896.0" layoutY="645.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="80.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-arc-height: 10; -fx-arc-width: 15;" width="200.0">
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2b18" height="52.0" layoutX="896.0" layoutY="645.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="80.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-arc-height: 10; -fx-arc-width: 15;" width="200.0">
                      <effect>
                         <DropShadow color="#575757" height="13.35" offsetX="8.0" offsetY="8.0" radius="2.8375" width="0.0" />
                      </effect>
@@ -124,7 +124,7 @@
                         <Font name="Century Gothic Bold" size="29.0" />
                      </font>
                   </Label>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0aff34" height="52.0" layoutX="1119.0" layoutY="645.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="80.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-arc-height: 10; -fx-arc-width: 15;" width="200.0">
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2b18" height="52.0" layoutX="1119.0" layoutY="645.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="80.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-arc-height: 10; -fx-arc-width: 15;" width="200.0">
                      <effect>
                         <DropShadow color="#575757" height="13.35" offsetX="8.0" offsetY="8.0" radius="2.8375" width="0.0" />
                      </effect>
@@ -176,6 +176,16 @@
                   <Button fx:id="tombolKeluar" layoutX="1792.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleKeluarAction" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: #ff2200;" text="Keluar" textFill="WHITE">
                      <font>
                         <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tombolUnduh" layoutX="828.0" layoutY="569.0" mnemonicParsing="false" onAction="#handleUnduh" prefHeight="52.0" prefWidth="195.0" style="-fx-background-color: #0aff34;" text="Unduh">
+                     <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tombolLihatSertifikat" layoutX="1051.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleLihatSertifikat" prefHeight="58.0" prefWidth="231.0" style="-fx-background-color: #0aff34;" text="Lihat Sertifikat">
+                     <font>
+                        <Font name="Century Gothic Bold" size="26.0" />
                      </font>
                   </Button>
                </children>
