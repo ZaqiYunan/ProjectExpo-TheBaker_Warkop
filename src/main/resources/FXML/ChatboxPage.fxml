@@ -55,7 +55,7 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <TextField fx:id="inputEmail" layoutX="36.0" layoutY="755.0" prefHeight="38.0" prefWidth="577.0" promptText="Masukkan email" style="-fx-background-color: fffff;" text="Chat disini.....">
+      <TextField fx:id="inputEmail" layoutX="36.0" layoutY="755.0" prefHeight="38.0" prefWidth="577.0" promptText="Chat disni......" style="-fx-background-color: fffff;">
          <effect>
             <ColorAdjust brightness="-0.43" contrast="-1.0" saturation="-1.0" />
          </effect>
